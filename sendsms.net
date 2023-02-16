@@ -1,0 +1,24 @@
+var url = "https://sms.standingtech.com/api/v3/sms/send";
+
+var httpRequest = (HttpWebRequest)WebRequest.Create(url);
+httpRequest.Method = "POST";
+
+httpRequest.Headers["Authorization"] = "Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY";
+httpRequest.ContentType = "application/json";
+httpRequest.Accept = "application/json";
+
+var data = @"{""recipient"":""9647xxxxxxxxx"",""sender_id"":""SenderID"",""type"":""plain"",""message"":""This is a test message""
+}";
+
+using (var streamWriter = new StreamWriter(httpRequest.GetRequestStream()))
+{
+   streamWriter.Write(data);
+}
+
+var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+{
+   var result = streamReader.ReadToEnd();
+}
+
+Console.WriteLine(httpResponse.StatusCode);
