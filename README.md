@@ -15,6 +15,7 @@ API Endpoint
 https://sms.standingtech.com/api/v3/sms/send
 
 
+```curl
 curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
@@ -25,10 +26,12 @@ curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 "type":"plain",
 "message":"This is a test message"
 }'
+```
 
 Example request for Multiple Numbers
 PHP
 
+```curl
 curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
@@ -40,25 +43,27 @@ curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 "message":"This is a test message",
 "schedule_time=2021-12-20 07:00"
 }'
-
+```
 Returns
 
 Returns a contact object if the request was successful.
 JSON
 
+```json
 {
     "status": "success",
     "data": "sms reports with all details",
 }
-
+```
 If the request failed, an error object will be returned.
 JSON
 
+```json
 {
     "status": "error",
     "message" : "A human-readable description of the error."
 }
-
+```
 View an SMS
 You can use StandingTech Bulk SMS Service's SMS API to retrieve information of an existing inbound or outbound SMS message.
 
@@ -67,29 +72,33 @@ You only need to supply the unique message id that was returned upon creation or
 API Endpoint
 https://sms.standingtech.com/api/v3/sms/{uid}
 
+
+```curl
 curl -X GET https://sms.standingtech.com/api/v3/sms/606812e63f78b \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
-
+```
 Returns
 
 Returns a contact object if the request was successful.
 JSON
 
+```json
 {
     "status": "success",
     "data": "sms data with all details",
 }
-
+```
 If the request failed, an error object will be returned.
 JSON
 
+```json
 {
     "status": "error",
     "message" : "A human-readable description of the error."
 }
-
+```
 View all messages
 
 API Endpoint
@@ -97,26 +106,29 @@ https://sms.standingtech.com/api/v3/sms/
 
 Example request
 
+```curl
 curl -X GET https://sms.standingtech.com/api/v3/sms \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
-
+```
 Returns
 
 Returns a contact object if the request was successful.
 JSON
 
+```json
 {
     "status": "success",
     "data": "sms reports with pagination",
 }
-
+```
 If the request failed, an error object will be returned.
 JSON
 
+```json
 {
     "status": "error",
     "message" : "A human-readable description of the error."
 }
-
+```
