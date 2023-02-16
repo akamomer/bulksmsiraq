@@ -1,3 +1,4 @@
+/* Sending SMS to single number */
 curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
@@ -7,4 +8,17 @@ curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 "sender_id":"SenderID",
 "type":"plain",
 "message":"This is a test message"
+}'
+
+/*Sending SMS to multiple numbers */
+curl -X POST https://sms.standingtech.com/api/v3/sms/send \
+-H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
+-H 'Content-Type: application/json' \
+-H 'Accept: application/json' \
+-d '{
+"recipient":"9647xxxxxxxxx,9647xxxxxxxxx",
+"sender_id":"SenderID",
+"type":"plain",
+"message":"This is a test message",
+"schedule_time=2021-12-20 07:00"
 }'
