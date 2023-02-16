@@ -1,7 +1,7 @@
 BulkSMSIraq.Com
 
 SMS API
-StandingTech Bulk SMS Service SMS API allows you to send and receive SMS messages to and from any country in the world through a REST API. Each message is identified by a unique random ID so that users can always check the status of a message using the given endpoint.
+SMS API allows you to send and receive SMS messages to and from any country in the world through a REST API. Each message is identified by a unique random ID so that users can always check the status of a message using the given endpoint.
 
 API Endpoint
 https://sms.standingtech.com/api/v3/sms/send
