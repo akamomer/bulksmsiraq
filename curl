@@ -1,3 +1,5 @@
+
+```curl
 /* Sending SMS to single number */
 curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
@@ -9,7 +11,9 @@ curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 "type":"plain",
 "message":"This is a test message"
 }'
+```
 
+```curl
 /*Sending SMS to multiple numbers */
 curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
@@ -22,3 +26,4 @@ curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 "message":"This is a test message",
 "schedule_time=2021-12-20 07:00"
 }'
+```
