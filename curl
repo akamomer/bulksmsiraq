@@ -1,6 +1,5 @@
-
-```curl
 /* Sending SMS to single number */
+```curl
 curl -X POST https://sms.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
