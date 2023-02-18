@@ -1,0 +1,27 @@
+# Set the request parameters
+$url = 'https://sms.standingtech.com/api/v3/sms/send'
+$authToken = 'your_authorization_token_here'
+$body = @{
+    recipient = '96475xxxxxxxx'
+    sender_id = 'SenderID'
+    type = 'plain'
+    message = 'This is test message using PS'
+} | ConvertTo-Json
+
+# Set the headers
+$headers = @{
+    Authorization = "Bearer $authToken"
+    'Content-Type' = 'application/json'
+}
+
+# Send the request
+$response = curl -X POST $url -Headers $headers -Body $body
+
+# Handle the response
+if ($response.StatusCode -eq 200) {
+    $responseContent = ConvertFrom-Json $response.Content
+    # Process the response content as needed
+} else {
+    $responseContent = ConvertFrom-Json $response.Content
+    # Process the error response content as needed
+}
