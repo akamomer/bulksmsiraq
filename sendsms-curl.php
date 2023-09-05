@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://sms.standingtech.com/api/v3/sms/send";
+$url = "https://gateway.standingtech.com/api/v3/sms/send";
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
