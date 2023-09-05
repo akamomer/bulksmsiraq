@@ -1,4 +1,4 @@
-URL url = new URL("https://sms.standingtech.com/api/v3/sms/send");
+URL url = new URL("https://gateway.standingtech.com/api/v3/sms/send");
 HttpURLConnection http = (HttpURLConnection)url.openConnection();
 http.setRequestMethod("POST");
 http.setDoOutput(true);
