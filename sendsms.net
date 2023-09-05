@@ -1,4 +1,4 @@
-var url = "https://sms.standingtech.com/api/v3/sms/send";
+var url = "https://gateway.standingtech.com/api/v3/sms/send";
 
 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
 httpRequest.Method = "POST";
