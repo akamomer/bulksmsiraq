@@ -4,7 +4,7 @@ SMS API
 SMS API allows you to send and receive SMS messages to and from any country in the world through a REST API. Each message is identified by a unique random ID so that users can always check the status of a message using the given endpoint.
 
 API Endpoint
-https://sms.standingtech.com/api/v3/sms/send
+https://gateway.standingtech.com/api/v3/sms/send
 
 StandingTech Bulk SMS Service's Programmable SMS API enables you to programmatically send SMS messages from your web application. First, you need to create a new message object. StandingTech Bulk SMS Service returns the created message object with each request.
 
@@ -12,11 +12,11 @@ Send your first SMS message with this example request.
 
 API Endpoint
 
-https://sms.standingtech.com/api/v3/sms/send
+https://gateway.standingtech.com/api/v3/sms/send
 
 
 ```curl
-curl -X POST https://sms.standingtech.com/api/v3/sms/send \
+curl -X POST https://gateway.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
@@ -32,7 +32,7 @@ Example request for Multiple Numbers
 PHP
 
 ```curl
-curl -X POST https://sms.standingtech.com/api/v3/sms/send \
+curl -X POST https://gateway.standingtech.com/api/v3/sms/send \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
@@ -70,11 +70,11 @@ You can use StandingTech Bulk SMS Service's SMS API to retrieve information of a
 You only need to supply the unique message id that was returned upon creation or receiving.
 
 API Endpoint
-https://sms.standingtech.com/api/v3/sms/{uid}
+https://gateway.standingtech.com/api/v3/sms/{uid}
 
 
 ```curl
-curl -X GET https://sms.standingtech.com/api/v3/sms/606812e63f78b \
+curl -X GET https://gateway.standingtech.com/api/v3/sms/606812e63f78b \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
@@ -102,12 +102,12 @@ JSON
 View all messages
 
 API Endpoint
-https://sms.standingtech.com/api/v3/sms/
+https://gateway.standingtech.com/api/v3/sms/
 
 Example request
 
 ```curl
-curl -X GET https://sms.standingtech.com/api/v3/sms \
+curl -X GET https://gateway.standingtech.com/api/v3/sms \
 -H 'Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
