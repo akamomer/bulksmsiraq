@@ -1,7 +1,7 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "https://sms.standingtech.com/api/v3/sms/send"
+url = "https://gateway.standingtech.com/api/v3/sms/send"
 
 headers = CaseInsensitiveDict()
 headers["Authorization"] = "Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY"
