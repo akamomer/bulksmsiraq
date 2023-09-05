@@ -26,5 +26,5 @@ $opts = array(
 */
 $context = stream_context_create($opts);
 
-$result = file_get_contents('https://sms.standingtech.com/api/v3/sms/send', false, $context);
+$result = file_get_contents('https://gateway.standingtech.com/api/v3/sms/send', false, $context);
 var_dump($result);
