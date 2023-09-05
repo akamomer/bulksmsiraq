@@ -4,7 +4,7 @@ use GuzzleHttp\Client;
 
 $client = new Client([
     // Base URI is used with relative requests
-    'base_uri' => 'https://sms.standingtech.com/api/v3/sms/',
+    'base_uri' => 'https://gateway.standingtech.com/api/v3/sms/',
 ]);
 $now = date("Y-m-d H:i:s");
 $body = <<<DATA
