@@ -2,7 +2,7 @@ URL url = new URL("https://gateway.standingtech.com/api/v3/sms/send");
 HttpURLConnection http = (HttpURLConnection)url.openConnection();
 http.setRequestMethod("POST");
 http.setDoOutput(true);
-http.setRequestProperty("Authorization", "Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY");
+http.setRequestProperty("Authorization", "Bearer API_KEY");
 http.setRequestProperty("Content-Type", "application/json");
 http.setRequestProperty("Accept", "application/json");
 
