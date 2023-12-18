@@ -1,10 +1,10 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "https://gateway.standingtech.com/api/v3/sms/send"
+url = "https://gateway.standingtech.com/api/v4/sms/send"
 
 headers = CaseInsensitiveDict()
-headers["Authorization"] = "Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY"
+headers["Authorization"] = "Bearer API_KEY"
 headers["Content-Type"] = "application/json"
 headers["Accept"] = "application/json"
 
