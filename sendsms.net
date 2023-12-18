@@ -1,9 +1,9 @@
-var url = "https://gateway.standingtech.com/api/v3/sms/send";
+var url = "https://gateway.standingtech.com/api/v4/sms/send";
 
 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
 httpRequest.Method = "POST";
 
-httpRequest.Headers["Authorization"] = "Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY";
+httpRequest.Headers["Authorization"] = "Bearer API_KEY";
 httpRequest.ContentType = "application/json";
 httpRequest.Accept = "application/json";
 
