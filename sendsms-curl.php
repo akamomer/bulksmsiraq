@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://gateway.standingtech.com/api/v3/sms/send";
+$url = "https://gateway.standingtech.com/api/v4/sms/send";
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
@@ -8,7 +8,7 @@ curl_setopt($curl, CURLOPT_POST, true);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $headers = array(
-   "Authorization: Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY",
+   "Authorization: Bearer API_KEY",
    "Content-Type: application/json",
    "Accept: application/json",
 );
@@ -16,9 +16,9 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 $data = <<<DATA
 {"recipient":"9647xxxxxxxxx",
-"sender_id":"YourName",
+"sender_id":"SenderID",
 "type":"plain",
-"message":"This is a test message"
+"message":"Your OTP Code is: 123654"
 }
 DATA;
 
