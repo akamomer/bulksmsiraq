@@ -1,9 +1,9 @@
 {
-    "url": "https://gateway.standingtech.com/api/v3/sms/send",
-    "raw_url": "https://gateway.standingtech.com/api/v3/sms/send",
+    "url": "https://gateway.standingtech.com/api/v4/sms/send",
+    "raw_url": "https://gateway.standingtech.com/api/v4/sms/send",
     "method": "post",
     "headers": {
-        "Authorization": "Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY",
+        "Authorization": "Bearer API_KEY",
         "Content-Type": "application/json",
         "Accept": "application/json"
     },
