@@ -16,7 +16,7 @@ var data = @"{
 
 var content = new StringContent(data, Encoding.UTF8, "application/json");
 
-var response = client.PostAsync("https://gateway.standingtech.com/api/v3/sms/send", content).Result;
+var response = client.PostAsync("https://gateway.standingtech.com/api/v4/sms/send", content).Result;
 var responseContent = response.Content.ReadAsStringAsync().Result;
 Console.WriteLine(responseContent);
     }
