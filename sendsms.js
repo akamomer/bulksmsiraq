@@ -1,9 +1,9 @@
-var url = "https://gateway.standingtech.com/api/v3/sms/send";
+var url = "https://gateway.standingtech.com/api/v4/sms/send";
 
 var xhr = new XMLHttpRequest();
 xhr.open("POST", url);
 
-xhr.setRequestHeader("Authorization", "Bearer 49|LNFe8WJ7CPtvl2mzowAB4ll4enbFR0XGgnQh2qWY");
+xhr.setRequestHeader("Authorization", "Bearer API_KEY");
 xhr.setRequestHeader("Content-Type", "application/json");
 xhr.setRequestHeader("Accept", "application/json");
 
