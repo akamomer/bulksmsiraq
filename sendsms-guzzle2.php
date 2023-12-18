@@ -7,7 +7,7 @@ use GuzzleHttp\Exception\RequestException;
 $client = new Client();
 $now = date("Y-m-d H:i:s");
 // Set the request parameters
-$url = 'https://gateway.standingtech.com/api/v3/sms/send';
+$url = 'https://gateway.standingtech.com/api/v4/sms/send';
 $authToken = 'API_KEY';
 $body = [
     'recipient' => '96475xxxxxxxx',
