@@ -13,7 +13,7 @@ $body = [
     'recipient' => '96475xxxxxxxx',
     'sender_id' => 'SenderID',
     'type' => 'plain',
-    'message' => 'This is a test message using Guzzle at '.$now,
+    'message' => 'Your OTP Code is: 123654',
 ];
 
 // Set the headers
