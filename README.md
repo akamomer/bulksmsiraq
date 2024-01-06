@@ -107,7 +107,7 @@ https://gateway.standingtech.com/api/v3/sms/
 Example request
 
 ```curl
-curl -X GET https://gateway.standingtech.com/api/v3/sms \
+curl -X GET https://gateway.standingtech.com/api/v4/sms \
 -H 'Authorization: Bearer API_KEY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
