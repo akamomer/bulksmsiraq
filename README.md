@@ -70,7 +70,7 @@ You can use StandingTech Bulk SMS Service's SMS API to retrieve information of a
 You only need to supply the unique message id that was returned upon creation or receiving.
 
 API Endpoint
-https://gateway.standingtech.com/api/v3/sms/{uid}
+https://gateway.standingtech.com/api/v4/sms/{uid}
 
 
 ```curl
