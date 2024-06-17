@@ -16,7 +16,7 @@ https://gateway.standingtech.com/api/v4/sms/send
 
 
 ```curl
-curl -X POST https://gateway.standingtech.com/api/v3/sms/send \
+curl -X POST https://gateway.standingtech.com/api/v4/sms/send \
 -H 'Authorization: Bearer API_KEY' \
 -H 'Content-Type: application/json' \
 -H 'Accept: application/json' \
